@@ -122,25 +122,25 @@ export function LoginForm({ className, ...props }: UserAuthFormProps) {
             <Icons.spinner className="w-5 h-5 mr-2 animate-spin" />
           ) : (
             <Icons.google className="w-5 h-5 mr-2" />
-          )}{" "}
+          )}
           Google
         </button>
       </div>
 
       {noSuchAccount ? (
         <p className="text-sm font-medium text-center text-red-500">
-          No such account.{" "}
+          No such account.&nbsp;
           <Link href="/register" className="font-semibold text-red-600">
-            Sign up
-          </Link>{" "}
+            Sign up&nbsp;
+          </Link>
           instead?
         </p>
       ) : (
         <p className="text-sm font-medium text-center text-gray-600">
-          Don't have an account?{" "}
+          Don't have an account?&nbsp;
           <Link href="/register" className="font-semibold text-gray-800">
-            Sign up
-          </Link>{" "}
+            Sign up&nbsp;
+          </Link>
           for free.
         </p>
       )}

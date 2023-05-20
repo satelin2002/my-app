@@ -123,26 +123,26 @@ export function RegisterForm({ className, ...props }: UserAuthFormProps) {
             <Icons.spinner className="w-5 h-5 mr-2 animate-spin" />
           ) : (
             <Icons.google className="w-5 h-5 mr-2" />
-          )}{" "}
+          )}
           Google
         </button>
       </div>
 
       {accountExists ? (
         <p className="text-sm font-medium text-center text-red-500">
-          This email is already registered.{" "}
+          This email is already registered.&nbsp;
           <Link href="/login" className="font-semibold text-red-600">
-            Log in
-          </Link>{" "}
+            Log in&nbsp;
+          </Link>
           instead?
         </p>
       ) : (
         <p className="text-sm font-medium text-center text-gray-600">
-          Already registered?{" "}
+          Already registered?&nbsp;
           <Link href="/login" className="font-semibold text-gray-800">
             Sign in
-          </Link>{" "}
-          to your account.
+          </Link>
+          &nbsp;to your account.
         </p>
       )}
     </>
